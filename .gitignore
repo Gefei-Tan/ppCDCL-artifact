@@ -1,0 +1,41 @@
+# Ignore everything by default, then allow the files that belong to the release.
+**
+
+# Root files
+!.gitignore
+!README.md
+!LICENSE
+!CMakeLists.txt
+!run
+
+# Source file types, allowed inside the directories listed below
+!*.cnf
+!*.cpp
+!*.hpp
+!*.h
+!*.py
+
+# Source directories
+!src/
+!test/
+!test/cnfs/
+!scripts/
+!emp-dpf/
+!plaintext_cdcl/
+!ppsat/
+!ppsat/Eval/
+!ppsat/include/
+!ppsat/src/
+
+# Circuit files that the ORAM loads at startup
+!emp-dpf/files/
+!emp-dpf/files/aes_128.txt
+!emp-dpf/files/low_mc_128.txt
+!emp-dpf/files/low_mc_256.txt
+
+# Benchmark formulas
+!benchmarks/
+!benchmarks/SATLIB/
+!benchmarks/SATLIB/**
+!benchmarks/Haplotype/
+!benchmarks/Haplotype/**
